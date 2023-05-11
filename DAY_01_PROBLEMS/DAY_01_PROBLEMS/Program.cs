@@ -11,7 +11,7 @@ class problem
         while(flag)
         {
             Console.WriteLine("Select option to display");
-            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num\n5.DateTime_ExecutionTime\n6.Avg_Random_Num");
+            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num\n5.DateTime_ExecutionTime\n6.Avg_Random_Num\n7.Math2");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -42,6 +42,10 @@ class problem
                 case 6:
                     Avg_Random_Num arn=new Avg_Random_Num();
                     arn.Random_Avg();
+                    break;
+                case 7:
+                    Math2 math2 = new Math2();
+                    math2.Modulus();
                     break;
 
             }
