@@ -23,7 +23,11 @@ class problem
                         Console.WriteLine(friend);
                     }
                     break;
-              
+                case 2:
+                    Math1 math1 = new Math1();
+                    math1.Numbers();
+                    break;
+
             }
         }
     }
