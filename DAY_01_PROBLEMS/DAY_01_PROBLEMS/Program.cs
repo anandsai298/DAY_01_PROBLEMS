@@ -27,6 +27,10 @@ class problem
                     Math1 math1 = new Math1();
                     math1.Numbers();
                     break;
+                case 3:
+                    Perimetre_Area_Circle pac = new Perimetre_Area_Circle();
+                    pac.Circle();
+                    break;
 
             }
         }
