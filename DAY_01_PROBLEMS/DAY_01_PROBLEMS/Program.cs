@@ -11,7 +11,7 @@ class problem
         while(flag)
         {
             Console.WriteLine("Select option to display");
-            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num");
+            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num\n5.DateTime_ExecutionTime");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -34,6 +34,10 @@ class problem
                 case 4:
                     String_Num sn = new String_Num();
                     sn.StNu();
+                    break;
+                case 5:
+                    DateTime_ExecutionTime dt= new DateTime_ExecutionTime();
+                    dt.Date_Execution_Time();
                     break;
 
             }
