@@ -11,7 +11,7 @@ class problem
         while(flag)
         {
             Console.WriteLine("Select option to display");
-            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle");
+            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -30,6 +30,10 @@ class problem
                 case 3:
                     Perimetre_Area_Circle pac = new Perimetre_Area_Circle();
                     pac.Circle();
+                    break;
+                case 4:
+                    String_Num sn = new String_Num();
+                    sn.StNu();
                     break;
 
             }
