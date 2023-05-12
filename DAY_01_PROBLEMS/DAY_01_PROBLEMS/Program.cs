@@ -11,7 +11,7 @@ class problem
         while(flag)
         {
             Console.WriteLine("Select option to display");
-            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num\n5.DateTime_ExecutionTime\n6.Avg_Random_Num\n7.Math2");
+            Console.WriteLine("1.ListOfFriendsName\n2.Math1\n3.Perimetre_Area_Circle\n4.String_Num\n5.DateTime_ExecutionTime\n6.Avg_Random_Num\n7.Math2\n8.FullNameParts\n9.PlaceName\n10.SumOfDigits");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -46,6 +46,18 @@ class problem
                 case 7:
                     Math2 math2 = new Math2();
                     math2.Modulus();
+                    break;
+                case 8:
+                    FullNameParts  fullNameParts = new FullNameParts();
+                    fullNameParts.Name();
+                    break;
+                case 9:
+                    PlaceName n=new PlaceName();
+                    n.Place();
+                    break;
+                case 10:
+                    int s=Sum_Of_Digits.Sum(25);
+                    Console.WriteLine(s);
                     break;
 
             }
